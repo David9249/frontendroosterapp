@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Rosster app</title>
+</head>
+
+<body>
+    
+   
+    <!-- <div class="container"> -->
+        <div class="buttons">
+            <!-- <h2>Labyrinth rooster app</h2> -->
+
+            <button class="" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">registreren</button>
+            <button class="" onclick="document.getElementById('id02').style.display='block'"
+                style="width:auto;">inloggen</button>
+        </div>
+    </div>
+    </div>
+    
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>registeren</h1>
+                <p>voer alstublieft een geldige naam en wachtwoord.</p>
+                <hr>
+                <label for="email"><b>account naam</b></label>
+                <input type="text" placeholder="account naam" name="email" required>
+
+                <label for="psw"><b>wachtwoord</b></label>
+                <input type="password" placeholder="wachtwoord" name="psw" required>
+
+                <label for="psw-repeat"><b>herhaal wachtwoord</b></label>
+                <input type="password" placeholder="herhaal wachtwoord" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">herinner mij
+                </label>
+
+                <p>door het maken van een account geef je recht toe aan: <a href="#" style="color:dodgerblue">Terms &
+                        Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">annuleer</button>
+                    <button type="submit" class="signupbtn">registreer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>inloggen</h1>
+                <p>schrijf hier je naam en wachtwoord</p>
+                <hr>
+                <label for="email"><b>account naam</b></label>
+                <input type="text" placeholder="account naam" name="email" required>
+
+                <label for="psw"><b>wachtwoord</b></label>
+                <input type="password" placeholder="wachtwoord" name="psw" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> herinner mij
+                </label>
+
+                <p><a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">annuleer</button>
+                    <button type="submit" class="signupbtn">inloggen</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="containercolor">
+        <h2>labyrint rooster app</h2>
+
+        <p class="text">Dit is de rooster app gemaakt door Alfa college studenten Melle, Thomas, Jur, Lorenzo, Aniek, Kevin en David</p>
+
+        <!-- <div class="text">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+     -->
+    </div>
+    <!-- <img class="PIC" src="./images/Background.png"> -->
+</body>
